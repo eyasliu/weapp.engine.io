@@ -9,7 +9,7 @@ module.exports = {
   entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, ''),
-    filename: 'weapp.socket.io.js',
+    filename: 'weapp.engine.io.js',
     libraryTarget: 'umd',
   },
   plugins: [

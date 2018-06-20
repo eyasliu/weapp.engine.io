@@ -2,8 +2,8 @@
   "name": "weapp.engine.io-client",
   "description": "Client for the realtime Engine Wechat mini program",
   "license": "MIT",
-  "version": "3.2.1",
-  "main": "lib/index.js",
+  "version": "3.2.2",
+  "main": "weapp.engine.io.js",
   "homepage": "http://weappsocket.matong.io/",
   "contributors": [
     {
@@ -53,7 +53,10 @@
     "zuul-builder-webpack": "^1.2.0",
     "zuul-ngrok": "4.0.0"
   },
-  "scripts": {},
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack --config webpack.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:weapp-socketio/weapp.engine.io.git"
